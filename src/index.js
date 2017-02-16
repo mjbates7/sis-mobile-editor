@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, IndexRoute, Route, browserHistory } from 'react-router'
-import App from './App';
-
+import { Router, browserHistory } from 'react-router'
 import routes from './routes';
 
 // this imports from the external js script from externals in the config file.. (we import it where we want to use it)

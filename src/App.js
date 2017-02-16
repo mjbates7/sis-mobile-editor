@@ -12,10 +12,11 @@ class App extends Component {
     return (
       <div className="app">
         <Header />
-        
-        {this.props.children}
-        <hr/>
+        <div className="uk-container">       
+          {this.props.children}
+        </div>
 
+        
 
         <Sidebar />
 
