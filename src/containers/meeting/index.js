@@ -47,10 +47,20 @@ class MeetingPage extends Component {
         return (
             <div>
                 <p>found : { abc } meetings</p>
+                <div className="uk-grid-divider" data-uk-grid>
+                    <div className="uk-width-1-4@s">Name</div>
+                    <div className="uk-width-1-5@s">Auth</div>
+                    <div className="uk-width-1-5@s">Service</div>
+                    <div className="uk-width-1-5@s">Going</div>
+                    <div className="uk-width-1-5@s">Status</div>
+                </div>
                 <ul data-uk-accordion>
                     {this.state.meetings.map(meeting => {
                     return (<li>
                         <h3 className="uk-accordion-title uk-position-relative">
+                            <div className="uk-grid-divider" data-uk-grid>
+
+                            </div>
                             {meeting.venue}
                             <span className="uk-label uk-position-top-right uk-margin-right">{meeting.status}</span>
                         </h3>
